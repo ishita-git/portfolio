@@ -20,11 +20,12 @@
 
 .about-me-profile{
     
-    width: 50%;
-    background-image: url('../../assets/AboutMe/portfoliopro.jpg');
+    width: 60%;
+    background-image: url('../../assets/AboutMe/skillphoto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 80%;
 
 
 }

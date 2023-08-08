@@ -4,6 +4,7 @@ import ScrollService from '../../utilities/ScrollService'
 import Animations from '../../utilities/Animations'
 import  './AboutMe.css';
 
+
 export default function AboutMe(props) {
     let fadeInScreenHandler = (screen) => {
       if (screen.fadeInScreen !== props.id) return;
@@ -14,12 +15,12 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     
     const SCREEN_CONSTANTS = {
-        description:"Web and Android Developer with background knowledge of Node.js , SQL , along with a kack of building applications with utmost efficiency . Strong individual pusuing BTech in Computer Science , willing to be an asset for an organisation.",
+        description:"Web Developer with background knowledge of Node.js , SQL , along with a kack of building applications with utmost efficiency . Strong individual pusuing BTech in Computer Science , willing to be an asset for an organisation.",
         highlights:{
             bullets: [
-                " Web and Android Developer",
-                " Java Developer",
-                "Managing Database",
+                "Web and Frontend Developer",
+                "React.js Developer",
+                "Java Programming",
             ],
             heading: "Here are a few Highlights:"
         },
@@ -46,6 +47,7 @@ export default function AboutMe(props) {
             <div className="about-me-card">
               <div className="about-me-profile"></div>
               <div className="about-me-details">
+             
                 <span className="about-me-description">
                   {SCREEN_CONSTANTS.description}
                 </span>

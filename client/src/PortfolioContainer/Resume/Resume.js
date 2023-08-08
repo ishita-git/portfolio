@@ -51,48 +51,48 @@ export default function  Resume (props) {
   ];
 
   const programmingSkillsDetails = [
-    { skill: "Core Java", ratingPercentage: 85 },
-    { skill: "Android", ratingPercentage: 85 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "SQL", ratingPercentage: 60 },
+    { skill: "React.js", ratingPercentage: 85 },
+    { skill: "HTML", ratingPercentage: 90 },
+    { skill: "SCSS", ratingPercentage: 80 },
+    { skill: "SQL", ratingPercentage: 70 },
     { skill: "CSS", ratingPercentage: 80 },
-    { skill: "Advanced Java", ratingPercentage: 70 },
-    { skill: "React JS", ratingPercentage: 50 },
-    { skill: "Javascript", ratingPercentage: 50 },
-    { skill: "Python", ratingPercentage: 50 },
+    { skill: "Java Programming", ratingPercentage: 75 },
+    { skill: "Redux", ratingPercentage: 70 },
+    { skill: "Javascript", ratingPercentage: 80 },
+    { skill: "Git", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2021", toDate: "2022" },
+      title: "Reconciliation Dasboard",
+      duration: { fromDate: "2023", toDate: "2023" },
+      description:
+        "A dashboard used to display the reconciliation report of each dealer for each month and the option to download and send the report.",
+      subHeading: "Technologies Used: React JS, Redux , Javascript , SCSS, Antd",
+    },
+    {
+      title: "Admin Dashboard",
+      duration: { fromDate: "2023", toDate: "Present" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      subHeading: "Technologies Used: React JS, Charts , Context-API, Material-UI",
     },
     {
-      title: "Basic Banking App ",
-      duration: { fromDate: "2021", toDate: "2021" },
+      title: "Swiggy Clone",
+      duration: { fromDate: "2023", toDate: "2023" },
       description:
-        "An android Application designed to record the money transactions from one user to another. ",
-      subHeading:
-        "Technologies Used:  Java, Android Studio, SQL",
+        "Built a food ordering app like Swiggy.",
+      subHeading: "Technologies Used: React JS, CSS, HTML, Material-UI",
     },
-    {
-      title: "Registration App",
-      duration: { fromDate: "2021", toDate: "2021" },
-      description:
-        "An android app built to demonstrate database insertion and deletion.",
-      subHeading:
-        "Technologies Used:  Java, Android Studio, SQL",
-    },
+   
+    
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"DIT University , Dehradun"}
-        subHeading={"BTech in Computer Science"}
+        subHeading={"BTech in Computer Science with 8.5 SGPA"}
         fromDate={"2019"}
         toDate={"2023"}
       />
@@ -105,9 +105,9 @@ export default function  Resume (props) {
       />
       <ResumeHeading
         heading={"R.A.N Public School, Rudrapur "}
-        subHeading={"10TH CBSE Board with 10cgpa"}
-        fromDate={"2017"}
-        toDate={"2018"}
+        subHeading={"10TH CBSE Board with 10 CGPA"}
+        fromDate={"2016"}
+        toDate={"2017"}
       />
     </div>,
 
@@ -115,32 +115,43 @@ export default function  Resume (props) {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"The Sparks Foundation"}
-          subHeading={"Mobile App Developer Intern"}
-          fromDate={"2021"}
-          toDate={"2021"}
+          heading={"Tekion Corp"}
+          subHeading={"Associate Software Engineer Intern"}
+          fromDate={"Jan 2023"}
+          toDate={"July 2023"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Worked as an Android app developer and worked on 
-            a project.
+            Worked as a Frontend Developer on the project - Reconciliation Dashboard, which is a centralized tool that provides an overview of the reconciliation process within an organization.
+          
           </span>
         </div>
         <div className="experience-description">
+        
           <span className="resume-description-text">
-            -Built an Android Application designed to record the money transactions from one user to another.
-            showing various screens like-Transaction history, Users, Money left etc.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Integrated app with SQL for managing the database.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope the logic as per the given requirement.
+            -  Technologies used - React.js, Redux, SCSS , Javascript
           </span>
           <br />
         </div>
+        <br/>
+        
+
+        <ResumeHeading
+          heading={"Green Lights Studios"}
+          subHeading={"Frontend Developer"}
+          fromDate={"Jan 2022"}
+          toDate={"March 2022"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+           Contributed to the design and development of the website for a company operating in the cryptocurrency industry
+          </span>
+          <br/>
+          <span className="resume-description-text">
+            -  Technologies used - React.js, CSS, Javascript, HTML , Figma , Storybook.
+          </span>
+        </div>
+       
       </div>
     </div>,
 
@@ -244,11 +255,6 @@ export default function  Resume (props) {
     };
   }, [fadeInSubscription]);
 
- 
-
-
-
-  
 
  
 
